@@ -1,6 +1,6 @@
 Setup Frontend Dev Env with inline Media Queries
 =======================================================
-SASS and Grunt post processing for Media Querie grouping
+SASS and Grunt post processing for Media Query grouping
 
 # group-css-media-queries
 CSS post processing: group media queries. Useful for post processing preprocessed CSS files.
@@ -37,7 +37,7 @@ Output CSS is ordered by these rules:
 * ```dist.html``` includes ```screen.css```
 
 # Resources
-* https://gist.github.com/benfrain/2510308
 * https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/
+* https://gist.github.com/benfrain/2510308
 * https://github.com/sass-mq/sass-mq
 * https://github.com/Se7enSky/group-css-media-queries

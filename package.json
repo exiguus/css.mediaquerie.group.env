@@ -1,9 +1,10 @@
 {
-  "name": "css.mediaquerie.group.env",
+  "name": "css.mediaqueries.group.env",
   "description": "CSS Media Query Group Dev Env",
   "keywords": [
     "css",
     "media queries",
+    "media query",
     "@media",
     "preprocessed"
   ],
