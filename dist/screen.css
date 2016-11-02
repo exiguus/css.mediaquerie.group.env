@@ -1,4 +1,4 @@
-/*! css.mediaquerie.group.env - exiguus - 2016-11-02 10:11:20 */
+/*! css.mediaqueries.group.env - exiguus - 2016-11-02 13:11:10 */
 /*
  * base example file
  *
@@ -192,6 +192,11 @@ a {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .self .container {
     max-width: 976px;
+  }
+
+  html.at-root .self .container.inline-at-root {
+    color: #C0FFEE;
+    content: "coffee";
   }
 
   .self#header {

@@ -6,6 +6,12 @@
   border-right: $container-outline-size solid $container-outline-color;
   @include MQ(md) {
     max-width: $container-md;
+    @at-root html.at-root #{&} {
+      &.inline-at-root {
+        color: #C0FFEE;
+        content: "coffee";
+      }
+    }
   }
   @include MQ(sm) {
     max-width: $container-sm;

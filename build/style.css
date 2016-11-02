@@ -162,6 +162,11 @@
     max-width: 976px;
   }
 
+  html.at-root .self .container.inline-at-root {
+    color: #C0FFEE;
+    content: "coffee";
+  }
+
   .self#header {
     min-height: 60px;
   }
