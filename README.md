@@ -2,6 +2,13 @@ Setup Frontend Dev Env with inline Media Queries
 =======================================================
 SASS and Grunt post processing for Media Query grouping
 
+# Benefits
+What are the benefits of this setup?
+* Consistent inline Media Queries based on a mixin
+* One scss file is needed for a component or module that provides all declaration
+* No browser performance issues because of grouped Media Queries
+* Libs are not effected by grouping Media Queries and stay original
+
 # group-css-media-queries
 CSS post processing: group media queries. Useful for post processing preprocessed CSS files.
 
