@@ -1,0 +1,22 @@
+/*
+ * style example file
+ *
+ * self writen styles goes here
+ * media queries in this file will be grouped
+ */
+
+// variables and mixins
+@import "base/variables";
+@import "base/mixins";
+@import "style/variables";
+
+// components
+.self {
+  @import "style/template";
+  @import "style/header";
+  @import "style/footer";
+}
+
+
+// print
+@import "style/print";

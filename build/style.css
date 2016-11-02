@@ -1,0 +1,188 @@
+/*
+ * style example file
+ *
+ * self writen styles goes here
+ * media queries in this file will be grouped
+ */
+
+.self .container {
+  margin: 0 auto;
+  max-width: 1196px;
+  padding: 30px;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+.self pre {
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+.self#header {
+  margin-top: 30px;
+  min-height: 80px;
+}
+
+.self#header.smaller {
+  height: 40px;
+}
+
+.self#header > .container:first-child {
+  border-top: 2px solid #000000;
+}
+
+.self#header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.self#header nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.self#header nav ul li a {
+  padding: 10px;
+  height: 80px;
+  color: red;
+  background-color: transparent;
+}
+
+.self#header nav ul li a:hover {
+  color: blue;
+  background-color: #CCCCCC;
+}
+
+.self#footer {
+  margin-bottom: 30px;
+}
+
+.self#footer > .container:first-child {
+  border-bottom: 2px solid #000000;
+}
+
+@media screen and (min-width: 480px) {
+  .self #footer {
+    position: absolute;
+  }
+}
+
+@media (min-width: 480px) {
+  .self #footer {
+    position: absolute;
+  }
+}
+
+@media print {
+  .self #footer {
+    position: static;
+  }
+
+  #header,
+  #page,
+  #footer {
+    break-after: always;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .self .container {
+    max-width: 316px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .self#header {
+    min-height: 40px;
+  }
+
+  .self#header nav ul li a {
+    height: 40px;
+  }
+
+  .self#footer {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .self #footer {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .self #footer {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .self .container {
+    max-width: 726px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .self#header {
+    min-height: 40px;
+  }
+
+  .self#header nav ul li a {
+    height: 40px;
+  }
+
+  .self#footer {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .self #footer {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .self #footer {
+    position: absolute;
+  }
+}
+
+@media (max-width: 991px) {
+  .self #footer {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .self .container {
+    max-width: 976px;
+  }
+
+  .self#header {
+    min-height: 60px;
+  }
+
+  .self#header nav ul li a {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .self#header.smaller {
+    height: 72px;
+  }
+
+  .self #footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .self #footer {
+    position: relative;
+  }
+}

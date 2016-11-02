@@ -1,0 +1,14 @@
+/*
+ * base example file
+ *
+ * libs, globals and so on goes here
+ * media queries in this file will not be grouped
+ */
+// mixins and variables
+@import "base/variables";
+@import "base/mixins";
+@import "style/variables";
+
+// libs
+@import "../node_modules/normalize.css/normalize.css";
+@import "base/lib";

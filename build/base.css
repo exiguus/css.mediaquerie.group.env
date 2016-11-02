@@ -1,0 +1,30 @@
+/*
+ * base example file
+ *
+ * libs, globals and so on goes here
+ * media queries in this file will not be grouped
+ */
+@import url(../node_modules/normalize.css/normalize.css);
+/*
+ * example lib
+ */
+a {
+  color: red;
+}
+a:active, a:focus, a:hover {
+  color: blue;
+}
+
+a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  a {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  a {
+    text-decoration: none;
+  }
+}

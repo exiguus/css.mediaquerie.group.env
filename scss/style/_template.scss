@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  max-width: $container-lg;
+  padding: $container-offset-padding;
+  border-left: $container-outline-size solid $container-outline-color;
+  border-right: $container-outline-size solid $container-outline-color;
+  @include MQ(md) {
+    max-width: $container-md;
+  }
+  @include MQ(sm) {
+    max-width: $container-sm;
+    padding-left: $container-offset-padding-tablet;
+    padding-right: $container-offset-padding-tablet;
+  }
+  @include MQ(xs) {
+    max-width: $container-xs;
+    padding-left: $container-offset-padding-mobile;
+    padding-right: $container-offset-padding-mobile;
+  }
+}
+pre {
+  max-width: 100%;
+  overflow-y: auto;
+}

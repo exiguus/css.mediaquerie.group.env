@@ -1,0 +1,22 @@
+{
+  "name": "css.mediaquerie.group.env",
+  "description": "CSS Media Query Group Dev Env",
+  "keywords": [
+    "css",
+    "media queries",
+    "@media",
+    "preprocessed"
+  ],
+  "author": "exiguus",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-group-css-media-queries": "^1.0.1"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}

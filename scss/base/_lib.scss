@@ -1,0 +1,28 @@
+/*
+ * example lib
+ */
+ a {
+   color: $link-color;
+   &:active,
+   &:focus,
+   &:hover {
+     color: $link-active-color;
+   }
+ }
+// WRONG
+// @include MQ(sm) {
+//   a {
+//     text-decoration: none;
+//   }
+// }
+
+// RIGHT
+a {
+  text-decoration: underline;
+  @include MQ(sm) {
+    text-decoration: none;
+  }
+  @include MQ(xs) {
+    text-decoration: none;
+  }
+}

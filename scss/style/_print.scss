@@ -1,0 +1,7 @@
+@media print {
+  #header,
+  #page,
+  #footer {
+    break-after: always;
+  }
+}

@@ -1,0 +1,38 @@
+
+@mixin MQ($viewport) {
+	// https://gist.github.com/benfrain/2510308
+	// https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/
+	// https://github.com/sass-mq/sass-mq
+	// also see bootstrap $screen-vp-(min|max) variables
+  // inline Media Queries for Desktop first:
+	@if $viewport == "lg" {
+		@media screen and (min-width: $screen-lg-min) {
+			@at-root #{&} {
+      	@content;
+			}
+    }
+	}
+	@else if $viewport == "md" {
+		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    	@at-root #{&} {
+      	@content;
+			}
+    }
+	}
+	@else if $viewport == "sm" {
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			@at-root #{&} {
+      	@content;
+			}
+    }
+	}
+	@else if $viewport == "xs" {
+		@media screen and (max-width: $screen-xs-max) {
+			@at-root #{&} {
+      	@content;
+			}
+    }
+	}@else {
+		@content;
+	}
+}

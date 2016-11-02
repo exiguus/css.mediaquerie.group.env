@@ -1,0 +1,67 @@
+&#footer {
+  margin-bottom: $grid-gutter-width;
+  >.container:first-child {
+    border-bottom: $container-outline-size solid $container-outline-color;
+  }
+  @include MQ(sm) {
+    margin-bottom: $grid-gutter-width / 2;
+  }
+  @include MQ(xs) {
+    margin-bottom: $grid-gutter-width / 2;
+  }
+}
+
+// misc media queries for testing
+// mixed
+@media screen and (min-width: $screen-lg-min) {
+  #footer {
+    position: relative;
+  }
+}
+@media screen and (min-width: $screen-xs-min) {
+  #footer {
+    position: absolute;
+  }
+}
+@media screen and (min-width: $screen-sm-min) {
+  #footer {
+    position: static;
+  }
+}
+// min-width only
+@media (min-width: $screen-lg-min) {
+  #footer {
+    position: relative;
+  }
+}
+@media (min-width: $screen-xs-min) {
+  #footer {
+    position: absolute;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  #footer {
+    position: static;
+  }
+}
+// max-width only
+@media (max-width: $screen-xs-max) {
+  #footer {
+    position: absolute;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  #footer {
+    position: static;
+  }
+}
+@media (max-width: $screen-md-max) {
+  #footer {
+    position: static;
+  }
+}
+@media print {
+  #footer {
+    position: static;
+  }
+}
